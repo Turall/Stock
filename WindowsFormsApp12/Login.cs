@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp12
+{
+    public partial class Login : Form
+    {
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Tural" && textBox2.Text == "Muradov")
+            {
+                Menu mainMenu = new Menu();
+                mainMenu.ShowDialog();
+                Hide();
+            }
+            else MessageBox.Show("Wrong Username or Password");
+        }
+    }
+}
