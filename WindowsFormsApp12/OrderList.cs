@@ -22,7 +22,7 @@ namespace WindowsFormsApp12
         {
             foreach (var item in Order.OrderList)
             {
-                if (item.OrderTime == item.ArriveTime)
+                if (item.OrderTime.Date == item.ArriveTime.Date)
                 {
                     ListViewItem viewItem = new ListViewItem(new string[] {item.Client,item.Products,item.ProdQuantity.ToString(),
                 item.OrderTime.ToString(),item.ArriveTime.ToString(),"Arrived"});
@@ -41,9 +41,11 @@ namespace WindowsFormsApp12
         {
             for (int i = 0; i < listView1.Items.Count; i++)
             {
-                if (listView1.Items[i].SubItems[0].Text.Contains(textBox1.Text) ||
+               
+               if (listView1.Items[i].SubItems[0].Text.Contains(textBox1.Text) ||
                listView1.Items[i].SubItems[1].Text.Contains(textBox1.Text) ||
-               listView1.Items[i].SubItems[2].Text.Contains(textBox1.Text))
+               listView1.Items[i].SubItems[2].Text.Contains(textBox1.Text) ||
+                listView1.Items[i].SubItems[5].Text.Contains(textBox1.Text))
                 {
                     listesas.Add(listView1.Items[i]);
                 }
@@ -51,8 +53,6 @@ namespace WindowsFormsApp12
 
             if (string.IsNullOrWhiteSpace(textBox1.Text) == false)
             {
-
-
                 foreach (ListViewItem item in listView1.Items)
                 {
                     if (listesas.Find(x => x == item) == null)
@@ -61,7 +61,7 @@ namespace WindowsFormsApp12
                         listView1.Items.Remove(item);
                     }
                 }
-                
+
             }
             else
             {

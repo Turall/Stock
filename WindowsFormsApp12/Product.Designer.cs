@@ -45,21 +45,21 @@
             this.textBox1.Location = new System.Drawing.Point(79, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(79, 75);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(146, 20);
-            this.textBox2.TabIndex = 0;
+            this.textBox2.TabIndex = 2;
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(79, 165);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(146, 50);
-            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // button1
@@ -67,7 +67,7 @@
             this.button1.Location = new System.Drawing.Point(150, 239);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -113,7 +113,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(79, 124);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(146, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.TabIndex = 3;
             // 
             // Product
             // 

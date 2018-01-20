@@ -20,6 +20,8 @@ namespace WindowsFormsApp12
         private void Login_Load(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '*';
+            textBox1.TabIndex = 1;
+            textBox1.TabStop = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

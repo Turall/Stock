@@ -46,21 +46,21 @@
             this.textBox1.Location = new System.Drawing.Point(98, 27);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(128, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(98, 83);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(128, 20);
-            this.textBox2.TabIndex = 0;
+            this.textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(98, 132);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(128, 20);
-            this.textBox3.TabIndex = 0;
+            this.textBox3.TabIndex = 3;
             // 
             // maskedTextBox1
             // 
@@ -68,7 +68,7 @@
             this.maskedTextBox1.Mask = "(999) 000-00-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(128, 20);
-            this.maskedTextBox1.TabIndex = 1;
+            this.maskedTextBox1.TabIndex = 4;
             // 
             // label1
             // 
@@ -111,7 +111,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(98, 222);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(128, 55);
-            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
             // label5
@@ -128,7 +128,7 @@
             this.button1.Location = new System.Drawing.Point(98, 283);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 23);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

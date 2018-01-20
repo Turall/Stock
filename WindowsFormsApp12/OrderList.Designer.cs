@@ -48,6 +48,8 @@
             this.orderTime,
             this.arriveTime,
             this.status});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(-2, 111);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(437, 196);
@@ -91,6 +93,7 @@
             this.textBox1.Size = new System.Drawing.Size(138, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // label1
             // 

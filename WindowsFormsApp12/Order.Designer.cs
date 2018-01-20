@@ -46,7 +46,7 @@
             this.comboBox1.Location = new System.Drawing.Point(96, 39);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(171, 21);
-            this.comboBox1.TabIndex = 0;
+            this.comboBox1.TabIndex = 1;
             // 
             // comboBox2
             // 
@@ -54,7 +54,7 @@
             this.comboBox2.Location = new System.Drawing.Point(96, 75);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(171, 21);
-            this.comboBox2.TabIndex = 0;
+            this.comboBox2.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -63,7 +63,7 @@
             this.dateTimePicker1.MinDate = new System.DateTime(2018, 1, 19, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(171, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.TabIndex = 4;
             this.dateTimePicker1.Value = new System.DateTime(2018, 1, 19, 0, 0, 0, 0);
             // 
             // label1
@@ -107,7 +107,7 @@
             this.button1.Location = new System.Drawing.Point(127, 218);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 23);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -117,7 +117,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(96, 115);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(171, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.TabIndex = 3;
             // 
             // Order
             // 
