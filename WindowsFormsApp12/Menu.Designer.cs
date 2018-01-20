@@ -53,16 +53,16 @@
             this.опрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.listView2 = new System.Windows.Forms.ListView();
+            this.col1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.col2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.col3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView1 = new System.Windows.Forms.ListView();
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.surname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.col1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.col2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.col3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.adres = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +92,7 @@
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.файлToolStripMenuItem.Text = "&Customer";
+            this.файлToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // создатьToolStripMenuItem
             // 
@@ -106,12 +107,12 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(136, 6);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(136, 6);
             // 
             // предварительныйпросмотрToolStripMenuItem
             // 
@@ -119,19 +120,19 @@
             this.предварительныйпросмотрToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.предварительныйпросмотрToolStripMenuItem.Name = "предварительныйпросмотрToolStripMenuItem";
             this.предварительныйпросмотрToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.предварительныйпросмотрToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.предварительныйпросмотрToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.предварительныйпросмотрToolStripMenuItem.Text = "List";
             this.предварительныйпросмотрToolStripMenuItem.Click += new System.EventHandler(this.предварительныйпросмотрToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(136, 6);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.выходToolStripMenuItem.Text = "Вы&ход";
             // 
             // правкаToolStripMenuItem
@@ -144,12 +145,13 @@
             this.правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
             this.правкаToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.правкаToolStripMenuItem.Text = "&Order";
+            this.правкаToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // отменадействияToolStripMenuItem
             // 
             this.отменадействияToolStripMenuItem.Name = "отменадействияToolStripMenuItem";
             this.отменадействияToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.отменадействияToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.отменадействияToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.отменадействияToolStripMenuItem.Text = "Accept";
             this.отменадействияToolStripMenuItem.Click += new System.EventHandler(this.отменадействияToolStripMenuItem_Click);
             // 
@@ -157,19 +159,19 @@
             // 
             this.отменадействияToolStripMenuItem1.Name = "отменадействияToolStripMenuItem1";
             this.отменадействияToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.отменадействияToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.отменадействияToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.отменадействияToolStripMenuItem1.Text = "List";
             this.отменадействияToolStripMenuItem1.Click += new System.EventHandler(this.отменадействияToolStripMenuItem1_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(148, 6);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(148, 6);
             // 
             // сервисToolStripMenuItem
             // 
@@ -179,18 +181,19 @@
             this.сервисToolStripMenuItem.Name = "сервисToolStripMenuItem";
             this.сервисToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.сервисToolStripMenuItem.Text = "&Product";
+            this.сервисToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // настройкиToolStripMenuItem
             // 
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.настройкиToolStripMenuItem.Text = "Add";
             this.настройкиToolStripMenuItem.Click += new System.EventHandler(this.ProductAddToolStripMenuItem_Click);
             // 
             // параметрыToolStripMenuItem
             // 
             this.параметрыToolStripMenuItem.Name = "параметрыToolStripMenuItem";
-            this.параметрыToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.параметрыToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.параметрыToolStripMenuItem.Text = "List";
             this.параметрыToolStripMenuItem.Click += new System.EventHandler(this.параметрыToolStripMenuItem_Click);
             // 
@@ -260,6 +263,23 @@
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             // 
+            // col1
+            // 
+            this.col1.Text = "Name";
+            // 
+            // col2
+            // 
+            this.col2.Text = "Price";
+            // 
+            // col3
+            // 
+            this.col3.Text = "Quantity";
+            // 
+            // description
+            // 
+            this.description.Text = "Description";
+            this.description.Width = 130;
+            // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -295,27 +315,10 @@
             this.phone.Text = "Phone";
             this.phone.Width = 80;
             // 
-            // col1
-            // 
-            this.col1.Text = "Name";
-            // 
-            // col2
-            // 
-            this.col2.Text = "Price";
-            // 
-            // col3
-            // 
-            this.col3.Text = "Quantity";
-            // 
             // adres
             // 
             this.adres.Text = "Address";
             this.adres.Width = 117;
-            // 
-            // description
-            // 
-            this.description.Text = "Description";
-            this.description.Width = 130;
             // 
             // Menu
             // 
@@ -324,6 +327,7 @@
             this.ClientSize = new System.Drawing.Size(446, 301);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.Text = "Menu";

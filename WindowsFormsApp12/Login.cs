@@ -28,7 +28,7 @@ namespace WindowsFormsApp12
             {
                 Menu mainMenu = new Menu();
                 mainMenu.ShowDialog();
-                Hide();
+                this.Close();
             }
             else MessageBox.Show("Wrong Username or Password");
         }

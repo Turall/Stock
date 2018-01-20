@@ -50,7 +50,7 @@
             this.status});
             this.listView1.Location = new System.Drawing.Point(-2, 111);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(399, 196);
+            this.listView1.Size = new System.Drawing.Size(437, 196);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -81,7 +81,7 @@
             // status
             // 
             this.status.Text = "Status";
-            this.status.Width = 55;
+            this.status.Width = 65;
             // 
             // textBox1
             // 
@@ -90,6 +90,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(138, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -104,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 309);
+            this.ClientSize = new System.Drawing.Size(437, 309);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listView1);

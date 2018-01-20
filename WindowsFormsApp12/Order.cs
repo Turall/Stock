@@ -53,14 +53,14 @@ namespace WindowsFormsApp12
             orders.ProdQuantity =Convert.ToInt32( numericUpDown1.Value.ToString());
             orders.ArriveTime = dateTimePicker1.Value;
             orders.OrderTime = DateTime.Now;
-            OrderList.Add(orders);
             foreach (var item in Product.productList)
             {
-                if (item.Quantity > orders.ProdQuantity && item.Name == orders.Products)
+                if (item.Quantity >= orders.ProdQuantity && item.Name == orders.Products)
                 {
                     item.Quantity = item.Quantity - orders.ProdQuantity;
+                    OrderList.Add(orders);
                 }
-                else
+                else if (item.Quantity < orders.ProdQuantity && item.Name == orders.Products)
                 {
                     MessageBox.Show("there are not so many goods in stock");
                 }

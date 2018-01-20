@@ -78,5 +78,14 @@ namespace WindowsFormsApp12
             OrderList orderList = new OrderList();
             orderList.ShowDialog();
         }
+
+        private void файлToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //panel1.Visible = false;
+            //listView1.Visible = false;
+            //listView2.Visible = false ;
+            listView1.Items.Clear();
+            listView2.Items.Clear();
+        }
     }
 }
