@@ -15,9 +15,7 @@ namespace WindowsFormsApp12
         public Menu()
         {
             InitializeComponent();
-            panel1.Visible = false;
-            listView1.Visible = false;
-            listView2.Visible = false;
+            
             
         }
 
@@ -45,8 +43,7 @@ namespace WindowsFormsApp12
 
         private void предварительныйпросмотрToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            listView1.Visible = true;
+            
             if (Customer.CustomersList.Count != 0)
             {
                 foreach (var item in Customer.CustomersList)
@@ -60,8 +57,6 @@ namespace WindowsFormsApp12
 
         private void параметрыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            listView2.Visible = true;
             if (Product.productList.Count != 0)
             {
                 foreach (var item in Product.productList)
@@ -81,11 +76,13 @@ namespace WindowsFormsApp12
 
         private void файлToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //panel1.Visible = false;
-            //listView1.Visible = false;
-            //listView2.Visible = false ;
             listView1.Items.Clear();
             listView2.Items.Clear();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
