@@ -48,7 +48,7 @@ namespace WindowsFormsApp12
             {
                 foreach (var item in Customer.CustomersList)
                 {
-                    ListViewItem items = new ListViewItem(new string[] { item.Name, item.Surname, item.Email, item.Phone ,item.Phone});
+                    ListViewItem items = new ListViewItem(new string[] { item.Name, item.Surname, item.Email, item.Phone ,item.Address});
                     listView1.Items.Add(items);
                 }
             }

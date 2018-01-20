@@ -146,10 +146,10 @@
     <value>&amp;Add</value>
   </data>
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="предварительныйпросмотрToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -171,13 +171,13 @@
     <value>Ctrl+F</value>
   </data>
   <data name="предварительныйпросмотрToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="предварительныйпросмотрToolStripMenuItem.Text" xml:space="preserve">
     <value>List</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 22</value>
@@ -191,17 +191,80 @@
   <data name="файлToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Customer</value>
   </data>
+  <data name="отменадействияToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="отменадействияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 22</value>
+  </data>
+  <data name="отменадействияToolStripMenuItem.Text" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="отменадействияToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+O</value>
+  </data>
+  <data name="отменадействияToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 22</value>
+  </data>
+  <data name="отменадействияToolStripMenuItem1.Text" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 6</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 6</value>
+  </data>
   <data name="правкаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 20</value>
   </data>
   <data name="правкаToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Order</value>
   </data>
+  <data name="настройкиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="настройкиToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="параметрыToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="параметрыToolStripMenuItem.Text" xml:space="preserve">
+    <value>List</value>
+  </data>
   <data name="сервисToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
   </data>
   <data name="сервисToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Product</value>
+  </data>
+  <data name="содержаниеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="содержаниеToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Содержание</value>
+  </data>
+  <data name="индексToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="индексToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Индекс</value>
+  </data>
+  <data name="поискToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="поискToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Поиск</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 6</value>
+  </data>
+  <data name="опрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="опрограммеToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;О программе...</value>
   </data>
   <data name="справкаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
@@ -237,68 +300,23 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="отменадействияToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+S</value>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="отменадействияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 22</value>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="отменадействияToolStripMenuItem.Text" xml:space="preserve">
-    <value>Accept</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 108</value>
   </data>
-  <data name="отменадействияToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+O</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
   </data>
-  <data name="отменадействияToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 22</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="отменадействияToolStripMenuItem1.Text" xml:space="preserve">
-    <value>List</value>
-  </data>
-  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 6</value>
-  </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 6</value>
-  </data>
-  <data name="настройкиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="настройкиToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="параметрыToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="параметрыToolStripMenuItem.Text" xml:space="preserve">
-    <value>List</value>
-  </data>
-  <data name="содержаниеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 22</value>
-  </data>
-  <data name="содержаниеToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Содержание</value>
-  </data>
-  <data name="индексToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 22</value>
-  </data>
-  <data name="индексToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Индекс</value>
-  </data>
-  <data name="поискToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 22</value>
-  </data>
-  <data name="поискToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Поиск</value>
-  </data>
-  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 6</value>
-  </data>
-  <data name="опрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 22</value>
-  </data>
-  <data name="опрограммеToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;О программе...</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Product List</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -312,6 +330,21 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Customer List</value>
+  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -323,6 +356,15 @@
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 220</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 34</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;panel3.Name" xml:space="preserve">
     <value>panel3</value>
@@ -336,6 +378,30 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="col1.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="col2.Text" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="col3.Text" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="description.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="description.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="listView2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 120</value>
+  </data>
+  <data name="listView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 99</value>
+  </data>
+  <data name="listView2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;listView2.Name" xml:space="preserve">
     <value>listView2</value>
   </data>
@@ -347,6 +413,42 @@
   </data>
   <data name="&gt;&gt;listView2.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="name.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="name.Width" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="surname.Text" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="email.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="email.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="phone.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="phone.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="adres.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="adres.Width" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 17</value>
+  </data>
+  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 88</value>
+  </data>
+  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;listView1.Name" xml:space="preserve">
     <value>listView1</value>
@@ -381,90 +483,6 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="listView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 120</value>
-  </data>
-  <data name="listView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 99</value>
-  </data>
-  <data name="listView2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;listView2.Name" xml:space="preserve">
-    <value>listView2</value>
-  </data>
-  <data name="&gt;&gt;listView2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;listView2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="col1.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="col2.Text" xml:space="preserve">
-    <value>Price</value>
-  </data>
-  <data name="col3.Text" xml:space="preserve">
-    <value>Quantity</value>
-  </data>
-  <data name="description.Text" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="description.Width" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 17</value>
-  </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 88</value>
-  </data>
-  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
-  </data>
-  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="name.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="name.Width" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="surname.Text" xml:space="preserve">
-    <value>Surname</value>
-  </data>
-  <data name="email.Text" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="email.Width" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="phone.Text" xml:space="preserve">
-    <value>Phone</value>
-  </data>
-  <data name="phone.Width" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="adres.Text" xml:space="preserve">
-    <value>Address</value>
-  </data>
-  <data name="adres.Width" type="System.Int32, mscorlib">
-    <value>117</value>
-  </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 27</value>
   </data>
@@ -484,84 +502,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 220</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 34</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 1</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Customer List</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 108</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Product List</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

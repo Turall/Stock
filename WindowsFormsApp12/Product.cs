@@ -27,7 +27,7 @@ namespace WindowsFormsApp12
         {
             products.Name = textBox1.Text;
             products.Price = textBox2.Text;
-            products.Quantity =Convert.ToInt32( numericUpDown1.Value.ToString()) ;
+            products.Quantity =Convert.ToDouble( numericUpDown1.Value.ToString()) ;
             products.Description = richTextBox1.Text;
             productList.Add(products);
             Hide();
@@ -37,7 +37,7 @@ namespace WindowsFormsApp12
     {
         public string Name { get; set; }
         public string Price { get; set; }
-        public int Quantity { get; set; }
+        public double Quantity { get; set; }
         public string Description { get; set; }
     }
 }
