@@ -66,6 +66,8 @@ namespace WindowsFormsApp12
                 if (item.Name == comboBox2.Text)
                 {
                     label5.Text = "Max Quantity" + " " + item.Quantity.ToString();
+                    numericUpDown1.Maximum = Convert.ToDecimal(item.Quantity);
+                    break;
                 }
             }
         }
