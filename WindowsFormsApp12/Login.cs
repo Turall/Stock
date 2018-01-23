@@ -12,6 +12,7 @@ namespace WindowsFormsApp12
 {
     public partial class Login : Form
     {
+        Menu mainMenu = null;
         public Login()
         {
             InitializeComponent();
@@ -26,13 +27,27 @@ namespace WindowsFormsApp12
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Tural" && textBox2.Text == "Muradov")
+            //if (textBox1.Text == "Tural" && textBox2.Text == "Muradov")
+            //{
+            if (mainMenu == null)
             {
-                Menu mainMenu = new Menu();
-                mainMenu.ShowDialog();
-                this.Close();
+                Hide();
+                mainMenu = new Menu();
+                mainMenu.FormClosed += MainMenu_FormClosed;
+
+                mainMenu.Show();
+
             }
-            else MessageBox.Show("Wrong Username or Password");
+            else
+                mainMenu.Activate();
+            //}
+            //else MessageBox.Show("Wrong Username or Password");
+        }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+            mainMenu = null;
         }
     }
 }

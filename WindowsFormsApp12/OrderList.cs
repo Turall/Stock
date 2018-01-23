@@ -35,45 +35,65 @@ namespace WindowsFormsApp12
                     listView1.Items.Add(viewItem);
                 }
             }
+            foreach (ListViewItem item in listView1.Items)
+            {
+                listesas.Add(item);
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < listView1.Items.Count; i++)
+           
+            if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
-               
-               if (listView1.Items[i].SubItems[0].Text.Contains(textBox1.Text) ||
-               listView1.Items[i].SubItems[1].Text.Contains(textBox1.Text) ||
-               listView1.Items[i].SubItems[2].Text.Contains(textBox1.Text) ||
-                listView1.Items[i].SubItems[5].Text.Contains(textBox1.Text))
+                for (int i = 0; i < listView1.Items.Count; i++)
                 {
-                    listesas.Add(listView1.Items[i]);
-                }
-            }
 
-            if (string.IsNullOrWhiteSpace(textBox1.Text) == false)
-            {
-                foreach (ListViewItem item in listView1.Items)
-                {
-                    if (listesas.Find(x => x == item) == null)
+                    if ((listView1.Items[i].SubItems[0].Text.Substring(0,textBox1.Text.Length) != textBox1.Text ||
+                   listView1.Items[i].SubItems[1].Text.Substring(0,textBox1.Text.Length) != textBox1.Text||
+                   listView1.Items[i].SubItems[2].Text.Substring(0, textBox1.Text.Length) != textBox1.Text))
                     {
-                        lisremoves.Add(item);
-                        listView1.Items.Remove(item);
+                        // listesas.Add(listView1.Items[i]);
+                        listView1.Items.Remove(listView1.Items[i]);
+                        i--;
                     }
                 }
-
             }
             else
             {
-                try
+                foreach (ListViewItem item in listView1.Items)
                 {
-                    foreach (var item in lisremoves)
-                    {
-                        listView1.Items.Add(item);
-                    }
+                    listView1.Items.Remove(item);
                 }
-                catch (Exception) { };
+                foreach (ListViewItem item in listesas)
+                {
+                    listView1.Items.Add(item);
+                }
             }
+
+            //if (!string.IsNullOrWhiteSpace(textBox1.Text))
+            //{
+            //    foreach (ListViewItem item in listView1.Items)
+            //    {
+            //        if (listesas.Find(x => x == item) == null)
+            //        {
+            //            lisremoves.Add(item);
+            //            listView1.Items.Remove(item);
+            //        }
+            //    }
+
+            //}
+            //else
+            //{
+            //    try
+            //    {
+            //        foreach (var item in lisremoves)
+            //        {
+            //            listView1.Items.Add(item);
+            //        }
+            //    }
+            //    catch (Exception) { };
+            //}
         }
     }
 }

@@ -19,6 +19,7 @@ namespace WindowsFormsApp12
             
         }
 
+        Product product = null;
         private void создатьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Customer customer = new Customer();
@@ -31,8 +32,19 @@ namespace WindowsFormsApp12
 
         private void ProductAddToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Product product = new Product();
-            product.ShowDialog();
+            if (product == null)
+            {
+                product = new Product();
+                product.FormClosed += Product_FormClosed;
+                product.ShowDialog();
+            }
+            else
+                product.Activate();
+        }
+
+        private void Product_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            product = null;
         }
 
         private void отменадействияToolStripMenuItem_Click(object sender, EventArgs e)
