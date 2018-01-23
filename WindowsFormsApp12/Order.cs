@@ -58,8 +58,19 @@ namespace WindowsFormsApp12
             }
             else MessageBox.Show("Text box is empty");
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (var item in Product.productList)
+            {
+                if (item.Name == comboBox2.Text)
+                {
+                    label5.Text = "Max Quantity" + " " + item.Quantity.ToString();
+                }
+            }
+        }
     }
-   public class Orders
+    public class Orders
     {
         public string Client { get; set; }
         public string Products { get; set; }

@@ -54,7 +54,7 @@ namespace WindowsFormsApp12
                    listView1.Items[i].SubItems[1].Text.Substring(0,textBox1.Text.Length) != textBox1.Text||
                    listView1.Items[i].SubItems[2].Text.Substring(0, textBox1.Text.Length) != textBox1.Text))
                     {
-                        // listesas.Add(listView1.Items[i]);
+                        
                         listView1.Items.Remove(listView1.Items[i]);
                         i--;
                     }
