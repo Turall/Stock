@@ -147,6 +147,7 @@
             this.Controls.Add(this.comboBox1);
             this.DoubleBuffered = true;
             this.Name = "Order";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Order";
             this.Load += new System.EventHandler(this.Order_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

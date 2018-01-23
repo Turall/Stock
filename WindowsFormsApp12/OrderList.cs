@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp12
@@ -70,30 +71,24 @@ namespace WindowsFormsApp12
                     listView1.Items.Add(item);
                 }
             }
+        }
 
-            //if (!string.IsNullOrWhiteSpace(textBox1.Text))
-            //{
-            //    foreach (ListViewItem item in listView1.Items)
-            //    {
-            //        if (listesas.Find(x => x == item) == null)
-            //        {
-            //            lisremoves.Add(item);
-            //            listView1.Items.Remove(item);
-            //        }
-            //    }
-
-            //}
-            //else
-            //{
-            //    try
-            //    {
-            //        foreach (var item in lisremoves)
-            //        {
-            //            listView1.Items.Add(item);
-            //        }
-            //    }
-            //    catch (Exception) { };
-            //}
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using(StreamWriter writer = new StreamWriter("Order.txt", true))
+            {
+                for (int i = 0; i < listView1.Items.Count; i++)
+                {
+                    writer.WriteLine(listView1.Items[i].SubItems[0].Text);
+                    writer.WriteLine(listView1.Items[i].SubItems[1].Text);
+                    writer.WriteLine(listView1.Items[i].SubItems[2].Text);
+                    writer.WriteLine(listView1.Items[i].SubItems[3].Text);
+                    writer.WriteLine(listView1.Items[i].SubItems[4].Text);
+                    writer.WriteLine(listView1.Items[i].SubItems[5].Text);
+                   
+                }
+                writer.Close();
+            }
         }
     }
 }

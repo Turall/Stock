@@ -25,12 +25,25 @@ namespace WindowsFormsApp12
 
         private void button1_Click(object sender, EventArgs e)
         {
-            products.Name = textBox1.Text;
-            products.Price = textBox2.Text;
-            products.Quantity =Convert.ToDouble( numericUpDown1.Value.ToString()) ;
-            products.Description = richTextBox1.Text;
-            productList.Add(products);
-            Hide();
+            if (!(string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) ||
+                string.IsNullOrWhiteSpace(richTextBox1.Text) || numericUpDown1.Value == 0))
+            {
+                products.Name = textBox1.Text;
+                products.Price = textBox2.Text;
+                products.Quantity = Convert.ToDouble(numericUpDown1.Value.ToString());
+                products.Description = richTextBox1.Text;
+                productList.Add(products);
+                Close();
+            }
+            else MessageBox.Show("Text box is empty");
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 8)
+            {
+                e.Handled = true;
+            }
         }
     }
     public class Products

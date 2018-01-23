@@ -15,15 +15,31 @@ namespace WindowsFormsApp12
         public Menu()
         {
             InitializeComponent();
-            
-            
+
+
         }
 
         Product product = null;
+        Customer customer = null;
+        Order order = null;
+        OrderList orderList = null;
         private void создатьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Customer customer = new Customer();
-            customer.ShowDialog();
+            if (customer == null)
+            {
+
+                customer = new Customer();
+                customer.StartPosition = FormStartPosition.CenterParent;
+                customer.FormClosed += Customer_FormClosed;
+                customer.ShowDialog();
+
+            }
+            else customer.Activate();
+        }
+
+        private void Customer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            customer = null;
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -49,8 +65,22 @@ namespace WindowsFormsApp12
 
         private void отменадействияToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Order order = new Order();
-            order.ShowDialog();
+            if (order == null)
+            {
+                if (Customer.CustomersList.Count != 0)
+                {
+                    order = new Order();
+                    order.FormClosed += Order_FormClosed;
+                    order.ShowDialog();
+                }
+                else MessageBox.Show("You don't have customer or product");
+            }
+            else order.Activate();
+        }
+
+        private void Order_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            order = null;
         }
 
         private void предварительныйпросмотрToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,9 +88,10 @@ namespace WindowsFormsApp12
             
             if (Customer.CustomersList.Count != 0)
             {
+                listView1.Items.Clear();
                 foreach (var item in Customer.CustomersList)
                 {
-                    ListViewItem items = new ListViewItem(new string[] { item.Name, item.Surname, item.Email, item.Phone ,item.Address});
+                    ListViewItem items = new ListViewItem(new string[] { item.Name, item.Surname, item.Email, item.Phone, item.Address });
                     listView1.Items.Add(items);
                 }
             }
@@ -69,11 +100,13 @@ namespace WindowsFormsApp12
 
         private void параметрыToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
             if (Product.productList.Count != 0)
             {
+                listView2.Items.Clear();
                 foreach (var item in Product.productList)
                 {
-                    ListViewItem items = new ListViewItem(new string[] { item.Name, item.Price, item.Quantity.ToString(),item.Description });
+                    ListViewItem items = new ListViewItem(new string[] { item.Name, item.Price, item.Quantity.ToString(), item.Description });
                     listView2.Items.Add(items);
                 }
             }
@@ -82,14 +115,18 @@ namespace WindowsFormsApp12
 
         private void отменадействияToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            OrderList orderList = new OrderList();
-            orderList.ShowDialog();
+            if (orderList == null)
+            {
+                orderList = new OrderList();
+                orderList.FormClosed += OrderList_FormClosed;
+                orderList.ShowDialog();
+            }
+            else orderList.Activate();
         }
 
-        private void файлToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OrderList_FormClosed(object sender, FormClosedEventArgs e)
         {
-            listView1.Items.Clear();
-            listView2.Items.Clear();
+            orderList = null;
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)

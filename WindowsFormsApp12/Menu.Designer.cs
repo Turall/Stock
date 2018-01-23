@@ -92,7 +92,6 @@
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             resources.ApplyResources(this.файлToolStripMenuItem, "файлToolStripMenuItem");
-            this.файлToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // создатьToolStripMenuItem
             // 
@@ -136,7 +135,6 @@
             this.toolStripSeparator4});
             this.правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
             resources.ApplyResources(this.правкаToolStripMenuItem, "правкаToolStripMenuItem");
-            this.правкаToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // отменадействияToolStripMenuItem
             // 
@@ -167,7 +165,6 @@
             this.параметрыToolStripMenuItem});
             this.сервисToolStripMenuItem.Name = "сервисToolStripMenuItem";
             resources.ApplyResources(this.сервисToolStripMenuItem, "сервисToolStripMenuItem");
-            this.сервисToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // настройкиToolStripMenuItem
             // 
@@ -221,7 +218,6 @@
             // 
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.listView2);
             this.panel1.Controls.Add(this.listView1);
             resources.ApplyResources(this.panel1, "panel1");
@@ -320,6 +316,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";

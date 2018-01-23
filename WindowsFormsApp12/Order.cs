@@ -20,52 +20,43 @@ namespace WindowsFormsApp12
         public static List<Orders> OrderList = new List<Orders>();
         private void Order_Load(object sender, EventArgs e)
         {
-            if(Customer.CustomersList.Count != 0 )
-            {
+            dateTimePicker1.MinDate = DateTime.Now;
                 foreach (var item in Customer.CustomersList)
                 {
                     comboBox1.Items.Add(item.Name + "  " + item.Surname);
                 }
-                
-            }
-            else
-            {
-                MessageBox.Show("You don't have client ");
-            }
-            if(Product.productList.Count != 0)
-            {
+           
                 foreach (var item in Product.productList)
                 {
                     comboBox2.Items.Add(item.Name);
                 }
-            }
-            else
-            {
-                MessageBox.Show("You don't have  products ");
-            }
-           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orders.Client = comboBox1.Text;
-            orders.Products = comboBox2.Text;
-            orders.ProdQuantity =Convert.ToInt32( numericUpDown1.Value.ToString());
-            orders.ArriveTime = dateTimePicker1.Value;
-            orders.OrderTime = DateTime.Now;
-            foreach (var item in Product.productList)
+            if (!(string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(comboBox2.Text) || string.IsNullOrWhiteSpace(dateTimePicker1.Text)
+                || numericUpDown1.Value == 0))
             {
-                if (item.Quantity >= orders.ProdQuantity && item.Name == orders.Products)
+                orders.Client = comboBox1.Text;
+                orders.Products = comboBox2.Text;
+                orders.ProdQuantity = Convert.ToInt32(numericUpDown1.Value.ToString());
+                orders.ArriveTime = dateTimePicker1.Value;
+                orders.OrderTime = DateTime.Now;
+                foreach (var item in Product.productList)
                 {
-                    item.Quantity = item.Quantity - orders.ProdQuantity;
-                    OrderList.Add(orders);
+                    if (item.Quantity >= orders.ProdQuantity && item.Name == orders.Products)
+                    {
+                        item.Quantity = item.Quantity - orders.ProdQuantity;
+                        OrderList.Add(orders);
+                    }
+                    else if (item.Quantity < orders.ProdQuantity && item.Name == orders.Products)
+                    {
+                        MessageBox.Show("there are not so many goods in stock");
+                    }
                 }
-                else if (item.Quantity < orders.ProdQuantity && item.Name == orders.Products)
-                {
-                    MessageBox.Show("there are not so many goods in stock");
-                }
+                Close();
             }
-            Hide();
+            else MessageBox.Show("Text box is empty");
         }
     }
    public class Orders

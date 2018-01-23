@@ -24,13 +24,18 @@ namespace WindowsFormsApp12
 
         private void button1_Click(object sender, EventArgs e)
         {
-            customers.Name = textBox1.Text;
-            customers.Surname = textBox2.Text;
-            customers.Email = textBox3.Text;
-            customers.Phone = maskedTextBox1.Text;
-            customers.Address = richTextBox1.Text;
-            CustomersList.Add(customers);
-            Hide();
+            if (!(string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) ||
+                string.IsNullOrWhiteSpace(richTextBox1.Text) || string.IsNullOrWhiteSpace(maskedTextBox1.Text) ))
+            {
+                customers.Name = textBox1.Text;
+                customers.Surname = textBox2.Text;
+                customers.Email = textBox3.Text;
+                customers.Phone = maskedTextBox1.Text;
+                customers.Address = richTextBox1.Text;
+                CustomersList.Add(customers);
+                Close();
+            }
+            else MessageBox.Show("Text Box is empty");
         }
     }
     public class Customers
