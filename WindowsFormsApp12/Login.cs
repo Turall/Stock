@@ -27,8 +27,8 @@ namespace WindowsFormsApp12
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //if (textBox1.Text == "Tural" && textBox2.Text == "Muradov")
-            //{
+            if (textBox1.Text == "Tural" && textBox2.Text == "Muradov")
+            {
             if (mainMenu == null)
             {
                 Hide();
@@ -40,8 +40,9 @@ namespace WindowsFormsApp12
             }
             else
                 mainMenu.Activate();
-            //}
-            //else MessageBox.Show("Wrong Username or Password");
+            }
+            else MessageBox.Show("Wrong Username or Password");
+            textBox1.Clear(); textBox2.Clear();
         }
 
         private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)

@@ -20,7 +20,7 @@ namespace WindowsFormsApp12
         Products products = new Products();
         private void Product_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,22 +40,13 @@ namespace WindowsFormsApp12
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 8)
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 8 && e.KeyChar != 44)
             {
                 e.Handled = true;
             }
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar) == false)
-            {
-                return;
-
-            }
-            e.Handled = true;
-            return;
-        }
+       
     }
     public class Products
     {
