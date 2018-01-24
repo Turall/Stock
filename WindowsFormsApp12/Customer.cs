@@ -37,6 +37,28 @@ namespace WindowsFormsApp12
             }
             else MessageBox.Show("Text Box is empty");
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) == false)
+            {
+                return;
+
+            }
+            e.Handled = true;
+            return;
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) == false)
+            {
+                return;
+
+            }
+            e.Handled = true;
+            return;
+        }
     }
     public class Customers
     {

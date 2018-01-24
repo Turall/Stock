@@ -44,18 +44,30 @@ namespace WindowsFormsApp12
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
+
             if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
+
                 for (int i = 0; i < listView1.Items.Count; i++)
                 {
-
-                    if ((listView1.Items[i].SubItems[0].Text.Substring(0,textBox1.Text.Length) != textBox1.Text ||
-                   listView1.Items[i].SubItems[1].Text.Substring(0,textBox1.Text.Length) != textBox1.Text||
-                   listView1.Items[i].SubItems[2].Text.Substring(0, textBox1.Text.Length) != textBox1.Text))
+                    if (listView1.Items[i].SubItems[0].Text.Length >= textBox1.Text.Length &&
+                   listView1.Items[i].SubItems[1].Text.Length >= textBox1.Text.Length &&
+                   listView1.Items[i].SubItems[2].Text.Length >= textBox1.Text.Length)
                     {
-                        
-                        listView1.Items.Remove(listView1.Items[i]);
+                        if (!(listView1.Items[i].SubItems[0].Text.ToLower().Substring(0, textBox1.Text.Length) == textBox1.Text.ToLower() ||
+                   listView1.Items[i].SubItems[1].Text.ToLower().Substring(0, textBox1.Text.Length) == textBox1.Text.ToLower() ||
+                   listView1.Items[i].SubItems[2].Text.ToLower().Substring(0, textBox1.Text.Length) == textBox1.Text.ToLower()))
+                        {
+
+                            listView1.Items.Remove(listView1.Items[i]);
+                            i--;
+                        }
+                    }
+                    else
+                    {
+                        listView1.Items[i].SubItems[0].Text += " ";
+                        listView1.Items[i].SubItems[1].Text += " ";
+                        listView1.Items[i].SubItems[2].Text += " ";
                         i--;
                     }
                 }
@@ -75,7 +87,7 @@ namespace WindowsFormsApp12
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using(StreamWriter writer = new StreamWriter("Order.txt", true))
+            using (StreamWriter writer = new StreamWriter("Order.txt", true))
             {
                 for (int i = 0; i < listView1.Items.Count; i++)
                 {
@@ -85,7 +97,7 @@ namespace WindowsFormsApp12
                     writer.WriteLine(listView1.Items[i].SubItems[3].Text);
                     writer.WriteLine(listView1.Items[i].SubItems[4].Text);
                     writer.WriteLine(listView1.Items[i].SubItems[5].Text);
-                   
+
                 }
                 writer.Close();
             }

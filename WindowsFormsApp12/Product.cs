@@ -45,6 +45,17 @@ namespace WindowsFormsApp12
                 e.Handled = true;
             }
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) == false)
+            {
+                return;
+
+            }
+            e.Handled = true;
+            return;
+        }
     }
     public class Products
     {
