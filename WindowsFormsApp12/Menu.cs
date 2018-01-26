@@ -44,6 +44,9 @@ namespace WindowsFormsApp12
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            Customer.CustomersFromXML();
+            Product.ProductsFromXML();
+            Order.OrdersFromXML();
         }
 
         private void ProductAddToolStripMenuItem_Click(object sender, EventArgs e)

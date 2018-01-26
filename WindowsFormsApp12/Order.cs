@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,7 +22,9 @@ namespace WindowsFormsApp12
         public static List<Orders> OrderList = new List<Orders>();
         private void Order_Load(object sender, EventArgs e)
         {
+            
             dateTimePicker1.MinDate = DateTime.Now;
+           
                 foreach (var item in Customer.CustomersList)
                 {
                     comboBox1.Items.Add(item.Name + "  " + item.Surname);
@@ -54,9 +58,46 @@ namespace WindowsFormsApp12
                         MessageBox.Show("there are not so many goods in stock");
                     }
                 }
+               Product.ProductsToXML();
+                OrdersToXML();
                 Close();
             }
             else MessageBox.Show("Text box is empty");
+        }
+
+        public static void OrdersToXML()
+        {
+            using (FileStream stream = new FileStream("Orderlist.xml", FileMode.OpenOrCreate))
+            {
+
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Orders>));
+                serializer.Serialize(stream, OrderList);
+
+            }
+            
+        }
+        public static void OrdersFromXML()
+        {
+            if (!File.Exists("Orderlist.xml"))
+            {
+                return ;
+            }
+            else
+            {
+                try
+                {
+                    using (FileStream stream = new FileStream("Orderlist.xml", FileMode.OpenOrCreate))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<Orders>));
+                        OrderList = (List<Orders>)serializer.Deserialize(stream);
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                
+            }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

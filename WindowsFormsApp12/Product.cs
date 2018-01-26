@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.Xml.Serialization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,7 +22,7 @@ namespace WindowsFormsApp12
         Products products = new Products();
         private void Product_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,8 +47,26 @@ namespace WindowsFormsApp12
                 e.Handled = true;
             }
         }
-
-       
+        public static void ProductsToXML()
+        {
+            using(FileStream stream = new FileStream("Products.xml", FileMode.OpenOrCreate))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Products>));
+                serializer.Serialize(stream, productList);
+            }
+        }
+       public static void ProductsFromXML()
+        {
+            if (!File.Exists("Products.xml"))
+            {
+                return;
+            }
+            using(FileStream stream = new FileStream("Products.xml", FileMode.OpenOrCreate))
+            {
+                XmlSerializer deserilizer = new XmlSerializer(typeof(List<Products>));
+                productList = (List<Products>)deserilizer.Deserialize(stream);
+            }
+        }
     }
     public class Products
     {

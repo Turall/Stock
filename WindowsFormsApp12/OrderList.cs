@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace WindowsFormsApp12
 {
@@ -17,10 +18,10 @@ namespace WindowsFormsApp12
         {
             InitializeComponent();
         }
-        List<ListViewItem> listesas = new List<ListViewItem>();
-        List<ListViewItem> lisremoves = new List<ListViewItem>();
+        List<ListViewItem> Orderlist = new List<ListViewItem>();
         private void OrderList_Load(object sender, EventArgs e)
         {
+           
             foreach (var item in Order.OrderList)
             {
                 if (item.OrderTime.Date == item.ArriveTime.Date)
@@ -38,7 +39,7 @@ namespace WindowsFormsApp12
             }
             foreach (ListViewItem item in listView1.Items)
             {
-                listesas.Add(item);
+                Orderlist.Add(item);
             }
         }
 
@@ -78,28 +79,10 @@ namespace WindowsFormsApp12
                 {
                     listView1.Items.Remove(item);
                 }
-                foreach (ListViewItem item in listesas)
+                foreach (ListViewItem item in Orderlist)
                 {
                     listView1.Items.Add(item);
                 }
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            using (StreamWriter writer = new StreamWriter("Order.txt", true))
-            {
-                for (int i = 0; i < listView1.Items.Count; i++)
-                {
-                    writer.WriteLine(listView1.Items[i].SubItems[0].Text);
-                    writer.WriteLine(listView1.Items[i].SubItems[1].Text);
-                    writer.WriteLine(listView1.Items[i].SubItems[2].Text);
-                    writer.WriteLine(listView1.Items[i].SubItems[3].Text);
-                    writer.WriteLine(listView1.Items[i].SubItems[4].Text);
-                    writer.WriteLine(listView1.Items[i].SubItems[5].Text);
-
-                }
-                writer.Close();
             }
         }
     }
